@@ -6,14 +6,14 @@ Console.WriteLine("Введите число: ");
 
 int a = int.Parse(Console.ReadLine());
 
-int r = a % 2;
-
-if (r = 0) ;
+int r = a%2;
+if(r !=0)
 {
-  Console.WriteLine("Вы ввели чётное число");
+  Console.WriteLine("Вы ввели НЕчётное число");
 }
 
 else
 {
-  Console.WriteLine("Вы ввели НЕчётное число");
+  r =0;
+  Console.WriteLine("Вы ввели чётное число");
 }
