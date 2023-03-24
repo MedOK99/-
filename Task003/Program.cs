@@ -12,12 +12,16 @@ int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 
 int b = int.Parse(Console.ReadLine());
+int min;
+int max;
 
 if (a < b)
 {
-  Console.WriteLine("min =(a), max = (b)");
+  min = a;
+  max = b;
+ Console.WriteLine ($"Минимальное = {a}, Максимальное = {b}");
 }
 else
 {
-  Console.WriteLine("min =(b), max = (a)");
+  Console.WriteLine($"Минимальное = {b}, максимальное = {a}");
 }
