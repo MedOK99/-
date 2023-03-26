@@ -1,27 +1,19 @@
-﻿// Напишите программу, которая на вход принимает 
-// два числа и выдаёт, какое число большее, а какое меньшее.
+﻿// Напишите программу, которая на 
+// вход принимает число и выдаёт, является 
+// ли число чётным (делится ли оно на два без остатка).
 
-// a = 5; b = 7 -> max = 7
-// a = 2 b = 10 -> max = 10
-// a = -9 b = -3 -> max = -3
-
-Console.WriteLine("Введите первое число: ");
+Console.WriteLine("Введите число: ");
 
 int a = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Введите второе число: ");
-
-int b = int.Parse(Console.ReadLine());
-int min;
-int max;
-
-if (a < b)
+int r = a % 2;
+if (r != 0)
 {
-  min = a;
-  max = b;
- Console.WriteLine ($"Минимальное = {a}, Максимальное = {b}");
+  Console.WriteLine("Вы ввели НЕчётное число");
 }
+
 else
 {
-  Console.WriteLine($"Минимальное = {b}, максимальное = {a}");
+  r = 0;
+  Console.WriteLine("Вы ввели чётное число");
 }

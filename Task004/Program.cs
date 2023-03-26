@@ -1,34 +1,17 @@
-﻿// Напишите программу, которая принимает на вход три 
-// числа и выдаёт максимальное из этих чисел.
+﻿// Напишите программу, которая на 
+// вход принимает число (N), а на выходе 
+// показывает все чётные числа от 1 до N.
 
-
-Console.WriteLine("Введите первое число: ");
+Console.WriteLine("Введите число: ");
 
 int a = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Введите второе число: ");
+int min = 1;
 
-int b = int.Parse(Console.ReadLine());
-
-Console.WriteLine("Введите третье число: ");
-
-int c = int.Parse(Console.ReadLine());
-
-int max = 0;
-
-if (a > b)
+for (int i = min; i <= a; i++)
 {
-  max = a;
+  if (i % 2 == 0)
+  {
+    Console.WriteLine(i);
+  }
 }
-else
-{
-  max = b;
-}
-
-if (c > max)
-{
-  max = c;
-}
-
-
-Console.WriteLine(max);
